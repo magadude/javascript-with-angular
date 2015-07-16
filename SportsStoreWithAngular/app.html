@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="sportsStore">
+	<head>
+		<title>Sports Store</title>
+		<link href="bootstrap.min.css" rel="stylesheet"/>
+		<link href="bootstrap-theme.min.css"/>
+	</head>
+	<body ng-controller="sportsStoreCtrl">
+		<div class="navbar navbar-inverse">
+			<a class="navbar-brand" href="#">SPORTS STORE</a>
+		</div>
+	<ng-include src="'views/productList.html'"></ng-include>
+	</body>
+	<script src="angular.js"></script>
+	<script>
+		angular.module("sportsStore", ["customFilters"]);
+	</script>
+	<script src="controllers/sportsStore.js"></script>
+	<script src="controllers/productListControllers.js"></script>
+	<script src="filters/filters.js"></script>
+</html>
